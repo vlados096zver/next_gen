@@ -81,6 +81,12 @@
         padding-right: 35px;
         margin-left: auto;
         transition: 0.25s color, 0.25s border-color;
+        @include media(sm) {
+            font-size: 24px;
+            padding: 14px 40px;
+            padding-right: 35px;
+            border-radius: 20px;  
+        }
         svg {
             fill: #3BEEB7;
             transition: 0.25s fill;
@@ -112,6 +118,13 @@
             position: static;
             margin: 20px;
             margin-left: auto;
+            width: 70px;
+            height: 70px;
+        }
+        svg {
+            display: block;
+            width: 100%;
+            max-width: 100%;
         }
         path {
             transition: 0.25s fill;

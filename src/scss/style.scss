@@ -117,6 +117,7 @@ body {
   @include media(sm) {
     font-size: 24px;
     padding: 14px 20px;
+    border-radius: 20px;
   }
   &.area {
     min-height: 140px;
