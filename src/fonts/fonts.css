@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "ClimateCrisis";
+     src: url('ClimateCrisis-Regular.woff') format('woff'), url('ClimateCrisis-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+     src: url('Rubik-Regular.woff') format('woff'), url('Rubik-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+     src: url('Rubik-Light.woff') format('woff'), url('Rubik-Light.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+     src: url('Rubik-Bold.woff') format('woff'), url('Rubik-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Rubik";
+     src: url('Rubik-Black.woff') format('woff'), url('Rubik-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}

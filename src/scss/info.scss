@@ -1,0 +1,115 @@
+@import 'responsive';
+
+.info {
+	position: relative;
+	padding-top: 140px;
+	padding-bottom: 210px;
+	@include media(mdx) {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	@include media(sm) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.btn {
+		position: absolute;
+		top: -5px;
+		right: 58px;
+		@include media(lgm) {
+			right: 8px;
+		}
+		@include media(lgk) {
+			top: -10px;
+		}
+		@include media(lgxs) {
+			right: 0px;
+		}
+		@include media(mdx) {
+			top: -16px;
+		}
+		@include media(md) {
+			position: static;
+			margin: 0 auto;
+			margin-top: 40px;
+		}
+	}
+	&__scroll {
+		position: absolute;
+		top: 448px;
+		left: -30px;
+		display: flex;
+		flex-direction: column;
+		@include media(mdx) {
+			display: none;
+		}
+		svg {
+			transform: rotate(90deg) translate(28px, -2px);
+			transform-origin: top left;
+		}
+		span {
+			font-size: 24px;
+			color: #3BEEB7;
+			text-transform: uppercase;
+			transform: rotate(-90deg);
+		}
+	}
+	&__wrap {
+		position: relative;
+	}
+	&__title {
+		font-size: 72px;
+		color: #4F4F4F;
+		text-transform: uppercase;
+		font-weight: 900;
+		@include media(lgm) {
+			font-size: 68px;
+		}
+		@include media(lgk) {
+			font-size: 60px;
+		}
+		@include media(lgxs) {
+			font-size: 54px;
+		}
+		@media (max-width: 1080px) {
+			font-size: 47px;
+		}
+		@include media(md) {
+			text-align: center;
+		}
+		@include media(xs) {
+			font-size: 34px;
+		}
+		span {
+			display: block;
+			text-align: right;
+			padding-top: 40px;
+			font-weight: normal;
+			@include media(md) {
+				text-align: center;
+			}
+		}
+	}
+	&__text {
+		max-width: 795px;
+		font-size: 24px;
+		line-height: 1.75;
+		padding-top: 40px;	
+		padding-bottom: 170px;
+		margin-left: auto;
+		@include media(md) {
+			padding-bottom: 80px;
+			text-align: center;
+		}
+	}
+	&__city {
+		font-size: 72px;	
+		color: #3BEEB7;
+		text-align: center;
+		text-transform: uppercase;	
+		font-weight: 900;	
+		@include media(xs) {
+			font-size: 40px;
+		}
+	}
+}

@@ -1,0 +1,138 @@
+@import 'responsive.scss';
+@import 'reset.scss';
+* {
+  box-sizing: border-box;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color: #fff;
+  color: #131313;
+  margin: 0;
+  padding: 0px;
+  font-family: Rubik, sans-serif;
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 40px;
+  @include media(mdx) {
+    padding: 0 20px;
+  }
+  &--inner {
+    max-width: 1470px;
+  }
+  &--block {
+    max-width: 1360px;
+  }
+  &--video {
+    max-width: 1900px;
+  }
+  &--products {
+    max-width: 1680px;
+  }
+  &--header {
+    max-width: 1680px;
+  }
+}
+
+.title {
+  font-size: 72px;
+  color: #4F4F4F;
+  text-transform: uppercase;
+  font-weight: 900;
+  @include media(mdx) {
+    font-size: 54px;
+  }
+  @include media(sm) {
+    font-size: 34px;
+  }
+  &--white {
+    color: #fff;
+  }
+}
+
+.btn {
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 32px;
+  color: #3BEEB7;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  text-transform: uppercase;
+  font-family: Rubik, sans-serif;
+  transition: 0.25s color;
+  @include media(sm) {
+    font-size: 24px;
+    gap: 20px;
+  }
+  @include media(small) {
+    font-size: 22px;
+  }
+  svg {
+    display: block;
+    max-width: 90px;
+    fill: #3BEEB7;
+    transition: 0.25s fill;
+  }
+  &:hover {
+    color: #35d4a4;
+    svg {
+      fill: #35d4a4;
+    }
+  }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-size: 32px;
+  color: #3BEEB7;
+  background: transparent;
+  border: none;
+  border-radius: 40px;
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+  padding: 20px 20px;
+  font-family: Rubik;
+  @include media(mdx) {
+    font-size: 27px;
+    border-radius: 20px;
+    padding: 15px 20px;
+  }
+  @include media(sm) {
+    font-size: 24px;
+    padding: 14px 20px;
+  }
+  &.area {
+    min-height: 140px;
+    resize: none;
+  }
+}
+
+.swiper {
+  &__prev,
+  &__next {
+    &:not(.swiper-button-disabled) {
+      transition: 0.25s opacity;
+      &:hover {
+        cursor: pointer;
+        opacity: .6;
+      }
+    }
+  }
+}

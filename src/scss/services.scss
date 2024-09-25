@@ -1,0 +1,136 @@
+@import 'responsive';
+
+.services {
+	padding-top: 110px;
+	padding-bottom: 220px;
+	@include media(mdx) {
+		padding-top: 80px;	
+		padding-bottom: 120px;	
+	}
+	@include media(sm) {
+		padding-top: 60px;	
+		padding-bottom: 60px;	
+	}
+	&__wrap {
+		margin-top: 86px;
+		@include media(mdx) {
+			margin-top: 40px;	
+		}
+	}
+	&__item {
+		padding: 0 100px;
+		@include media(lgm) {
+			padding: 0 50px;
+		}
+		@include media(mdx) {
+			padding: 0 20px;
+		}
+		&.active {
+			background-color: #000000;
+			.services__title,
+			.services__count {
+				color: #fff;
+			}
+
+			.services__text  {
+				p {
+					@include media(mdx) {
+						color: #fff;
+					}
+				}
+				
+			}
+			.services__btn {
+				background-color: #3AEEBD;
+				svg {
+					fill: #fff;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		padding: 50px 0px;
+		border-bottom: 1px solid #D9D9D9;
+		@include media(mdx) {
+			flex-direction: column;
+			padding: 35px 0;
+			position: relative;
+		}
+	}
+	&__title {
+		flex: 1;
+		font-size: 24px;
+		color: #000;
+		text-transform: uppercase;
+		@include media(mdx) {
+			padding-right: 80px;
+			margin-bottom: 15px;
+		}
+		@include media(sm) {
+			font-size: 20px;	
+		}
+		@include media(small) {
+			font-size: 18px;
+		}
+	}
+	&__count {
+		flex: 1;
+		font-size: 48px;
+		color: #000;
+		text-align: center;
+		font-weight: 300;
+		@include media(mdx) {
+			order: -1;
+			text-align: left;
+			padding-right: 80px;
+			padding-bottom: 10px;
+		}
+	}
+	&__text {
+		flex: 1;
+		p {
+			max-height: 0;
+			overflow: hidden;
+			max-width: 540px;
+			font-size: 20px;
+			color: #fff;
+			margin-left: auto;
+			padding-right: 100px;
+			transition: 1s;
+			@include media(lgm) {
+				padding-right: 50px;
+			}
+			@include media(mdx) {
+				padding-right: 0;
+				margin-left: 0;
+			}
+			@include media(sm) {
+				font-size: 16px;	
+			}
+		}
+	}
+	&__btn {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 70px;
+		height: 70px;
+		border: none;
+		border-radius: 50%;
+		background-color: transparent;
+		transition: 0.5s background-color;
+		@include media(mdx) {
+			position: absolute;
+			top: 32px;
+			right: 0;
+		}
+		svg {
+			fill: #3AEEBD;
+			transition: 0.25s transform, 0.25s fill;
+		}
+	}
+}

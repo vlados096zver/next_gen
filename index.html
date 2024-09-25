@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Next Gen</title>
+
+        <link rel="stylesheet" href="src/fonts/fonts.css">
+        <link href="src/css/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="dist/css/styles.css">
+    </head>
+    <body>
+
+      <svg style="display: none;">
+  <symbol id="btn" viewBox="0 0 90 90">
+    <rect x="10" y="10" width="70" height="70" rx="35"/>
+    <path d="M86.9183 28.6336C83.1318 18.9356 76.0999 10.8505 67.0206 5.75595C57.9412 0.661382 47.3763 -1.12745 37.126 0.69425C26.8756 2.51595 17.574 7.83547 10.806 15.7464C4.03805 23.6574 0.222474 33.6703 0.00942346 44.0791C-0.203627 54.4879 3.19903 64.6486 9.63761 72.8299C16.0762 81.0111 25.1523 86.7068 35.3196 88.9464C45.4868 91.1861 56.1161 89.831 65.3963 85.1123C74.6764 80.3935 82.0334 72.6029 86.2135 63.0679L85.1019 62.5806C81.0345 71.8584 73.8761 79.4389 64.8462 84.0304C55.8163 88.6219 45.4737 89.9404 35.5807 87.7612C25.6876 85.582 16.8563 80.0399 10.5914 72.0793C4.32642 64.1187 1.01553 54.232 1.22284 44.104C1.43014 33.9759 5.14281 24.233 11.7282 16.5354C18.3137 8.83781 27.3644 3.66176 37.3383 1.88919C47.3122 0.116626 57.5922 1.85721 66.4267 6.81438C75.2611 11.7716 82.1034 19.6386 85.7877 29.075L86.9183 28.6336Z"/>
+    <path d="M42.2677 50.2479L47.8191 44.6965V48.9417C47.819 49.4313 48.0134 49.901 48.3595 50.2473C48.7057 50.5936 49.1753 50.7883 49.6649 50.7884C50.1546 50.7885 50.6242 50.5941 50.9706 50.2479C51.3169 49.9018 51.5115 49.4322 51.5116 48.9425L51.5116 42.701C51.5101 41.559 51.0557 40.4642 50.2482 39.6566C49.4406 38.8491 48.3458 38.3947 47.2038 38.3932L40.9623 38.3932C40.4726 38.3933 40.003 38.5879 39.6569 38.9342C39.3107 39.2805 39.1163 39.7502 39.1164 40.2399C39.1165 40.7295 39.3112 41.1991 39.6575 41.5452C40.0038 41.8914 40.4735 42.0858 40.9631 42.0857L45.2083 42.0857L39.6569 47.6371C39.3107 47.9833 39.1162 48.4529 39.1162 48.9425C39.1162 49.4321 39.3107 49.9017 39.6569 50.2479C40.0031 50.5941 40.4726 50.7886 40.9623 50.7886C41.4519 50.7886 41.9215 50.5941 42.2677 50.2479Z" fill="white"/>
+  </symbol>
+</svg>
+
+    <header class="header">
+        <div class="container container--header">
+            <div class="header__wrap">
+                <a class="header__logo">
+                   <p class="header__title">NEXT GEN</p>
+                   <div class="header__desc">
+                    <p class="header__col">
+                      <span>E</span>
+                      <span>c</span>
+                      <span>o</span>
+                    </p>
+                    <p class="header__col">
+                      <span>S</span>
+                      <span>y</span>
+                      <span>s</span>
+                      <span>t</span>
+                      <span>e</span>
+                      <span>m</span>
+                      <span>s</span>
+                    </p>
+                  </div>
+            </a>
+              <div class="header__block">
+                  <div class="mobile-wrap">
+                    <div class="main-nav__toggle">
+                      <span class="line-burger"></span>
+                    </div>
+                  </div>
+                  <ul class="header__list">  
+                    <li>
+                      <a href="/#products" class="header__link">Products</a>
+                   </li>
+                   <li>
+                      <a href="/#about" class="header__link">About Us</a>
+                   </li>
+                   <li>
+                      <a href="/#services" class="header__link">Services</a>
+                   </li>
+                   <li>
+                     <button type="button" class="show-popup">
+                     <span>Contact</span>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                        <path d="M3.20069 9.18607L7.36426 5.0225L7.36426 8.20638C7.36417 8.57363 7.50998 8.92587 7.7696 9.18561C8.02922 9.44535 8.38139 9.59132 8.74864 9.59141C9.11589 9.5915 9.46813 9.44569 9.72787 9.18607C9.98761 8.92645 10.1336 8.57428 10.1337 8.20703L10.1337 3.52586C10.1325 2.66934 9.79172 1.84824 9.18607 1.24259C8.58042 0.636938 7.75932 0.296166 6.9028 0.294988L2.22163 0.294988C1.85438 0.295074 1.50221 0.441046 1.24259 0.70079C0.982967 0.960534 0.837163 1.31277 0.837249 1.68002C0.837335 2.04727 0.983306 2.39944 1.24305 2.65906C1.50279 2.91868 1.85503 3.06449 2.22228 3.0644H5.40616L1.24259 7.22797C0.982927 7.48763 0.837053 7.8398 0.837053 8.20702C0.837053 8.57423 0.982928 8.92641 1.24259 9.18607C1.50225 9.44573 1.85443 9.59161 2.22164 9.59161C2.58886 9.59161 2.94103 9.44573 3.20069 9.18607Z"/>
+                      </svg>
+                     </button>
+                   </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="info item">  
+      <p class="info__scroll" data-aos="fade-in">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="42" viewBox="0 0 11 42" fill="none">
+          <path d="M4.49565 40.9217L4.76841 0.577291C4.76841 0.257977 5.02639 0 5.3457 0C5.66502 0 5.92299 0.257977 5.92299 0.577291L5.65023 39.5272L9.15366 36.0238C9.37916 35.7982 9.74538 35.7982 9.97089 36.0238C10.1964 36.2493 10.1964 36.6155 9.97089 36.841L5.48065 41.3312C5.31468 41.4972 5.06752 41.5459 4.85104 41.4557C4.63636 41.3655 4.49565 41.1544 4.49565 40.9217Z" fill="#3BEEB7"/>
+          <path d="M2.47955e-05 36.426C2.47955e-05 36.2781 0.0559506 36.1302 0.169605 36.0183C0.395109 35.7928 0.761327 35.7928 0.986832 36.0183L5.48248 40.514C5.70799 40.7395 5.70799 41.1057 5.48248 41.3312C5.25698 41.5567 4.89076 41.5567 4.66526 41.3312L0.169605 36.8355C0.0559506 36.7219 2.47955e-05 36.574 2.47955e-05 36.426Z" fill="#3BEEB7"/>
+         </svg>
+          Scroll down 
+        </span>
+      </p>
+      <div class="container container--inner anim"> 
+        <div class="info__wrap">
+          <p class="info__title" data-aos="fade-in">Leading the Future <span>of Sustainable Technologies</span></p>
+          <button class="btn show-popup" data-aos="fade-in">
+            <svg width="90" height="90">
+              <use href="#btn"></use>
+            </svg>
+           <span>let’s talk now</span>
+          </button>
+          <div class="info__text" data-aos="fade-in">Innovative solutions for a greener tomorrow. Explore our eco-friendly products and services aimed at protecting the planet.</div>
+          <p class="info__city" data-aos="fade-in">In DUBAI</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video" data-aos="fade-up">
+      <div class="container container--video">
+        <div class="video__wrap"> 
+          <video poster="src/img/bg-video.png">
+            <source src="src/video/video.mp4" type="video/mp4">
+          </video>
+          <button class="video__btn">
+            <img src="src/img/icons/play.svg" alt="play">
+            <span>Play video</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+      <section class="partners">
+        <div class="container container--inner">
+          <div class="partners__wrap">
+            <div class="partners__item" data-aos="flip-left">
+              <img src="src/img/partners/tesla.png" alt="tesla">
+            </div>
+            <div class="partners__item" data-aos="flip-left">
+              <img src="src/img/partners/beyondmeat.png" alt="beyondmeat">
+            </div>
+            <div class="partners__item" data-aos="flip-left">
+              <img src="src/img/partners/patagonia.png" alt="patagonia">
+            </div>
+            <div class="partners__item" data-aos="flip-left">
+              <img src="src/img/partners/ikea.png" alt="ikea">
+            </div>
+            <div class="partners__item" data-aos="flip-left">
+              <img src="src/img/partners/nestle.png" alt="nestle">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container container--inner">
+          <div class="products__block">
+            <p class="title">Our Products</p>
+            <div class="products__holder">
+              <div class="swiper__prev">
+                <img src="src/img/btn-prev.svg" alt="prev">
+                </div>
+                <div class="swiper__next">
+                  <img src="src/img/btn-next.svg" alt="next">
+                </div>
+              </div>
+            </div>
+        </div>
+          <div class="container container--products">
+            <div class="products-wrap swiper">
+              <div class="swiper-wrapper">  
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-offset="100">
+                  <div class="products__image">
+                    <img src="src/img/products/1.png" alt="Solar Panels">
+                  </div>
+                  <p class="products__title">Solar Panels</p>
+                  <div class="products__text">
+                    <p>Highly efficient, sustainable energy solutions for residential and commercial properties.</p>
+                  </div>
+                   <button type="button" class="products__btn show-popup">
+                    <svg width="90" height="90">
+                      <use href="#btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-offset="100">
+                   <div class="products__image">
+                    <img src="src/img/products/2.png" alt="Wind Turbines">
+                  </div>
+                  <p class="products__title">Wind Turbines</p>
+                  <div class="products__text">
+                    <p>Highly efficient, sustainable energy solutions for residential and commercial properties.</p>
+                  </div>
+                <button type="button" class="products__btn show-popup">
+                    <svg width="90" height="90">
+                      <use href="#btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-slide" data-aos="zoom-in" data-aos-offset="100">
+                  <div class="products__image">
+                    <img src="src/img/products/3.png" alt="Eco-friendly Batteries">
+                  </div>
+                  <p class="products__title">Eco-friendly Batteries</p>
+                  <div class="products__text">
+                    <p>Long-lasting, sustainable energy storage with minimal environmental impact.</p>
+                  </div>
+                 <button type="button" class="products__btn show-popup">
+                    <svg width="90" height="90">
+                      <use href="#btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="products__image">
+                    <img src="src/img/products/4.png" alt="EV Charging Stations">
+                  </div>
+                  <p class="products__title">EV Charging Stations</p>
+                  <div class="products__text">
+                    <p>Convenient, fast, and green charging solutions for electric cars.</p>
+                  </div>
+                   <button type="button" class="products__btn show-popup">
+                    <svg width="90" height="90">
+                      <use href="#btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="products__image">
+                    <img src="src/img/products/5.png" alt="Water Purification">
+                  </div>
+                  <p class="products__title">Water Purification</p>
+                  <div class="products__text">
+                    <p>Advanced filtration technologies that deliver clean and safe drinking water.</p>
+                  </div>
+                   <button type="button" class="products__btn show-popup">
+                    <svg width="90" height="90">
+                      <use href="#btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="products__image">
+                    <img src="src/img/products/6.png" alt="Green Roof">
+                  </div>
+                  <p class="products__title">Green Roof</p>
+                  <div class="products__text">
+                    <p>Transform rooftops into living ecosystems, improving air quality and biodiversity.</p>
+                  </div>
+                  <button type="button" class="products__btn show-popup">
+                    <svg width="90" height="90">
+                      <use href="#btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="products__image">
+                    <img src="src/img/products/7.png" alt="Biodegradable Pack">
+                  </div>
+                  <p class="products__title">Biodegradable Pack</p>
+                  <div class="products__text">
+                    <p>Sustainable packaging solutions that reduce plastic waste and environmental harm.</p>
+                  </div>
+                  <button type="button" class="products__btn show-popup">
+                    <svg width="90" height="90">
+                      <use href="#btn"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="products__image">
+                    <img src="src/img/products/8.png" alt="Energy-efficient Home">
+                  </div>
+                  <p class="products__title">Energy-efficient Home</p>
+                  <div class="products__text">
+                    <p>Smart home systems that optimize energy usage and reduce carbon footprints.</p>
+                  </div>
+                  <button type="button" class="products__btn show-popup">
+                    <svg width="90" height="90">
+                      <use href="#btn"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </section>
+
+      <section class="who" id="about"> 
+        <div class="container container--block"> 
+          <p class="title title--white" data-aos="fade-up">Who We Are</p>
+          <div class="who__text" data-aos="fade-up">At Ecological Technologies, we are driven by a passion for sustainability and innovation. Our mission is to create eco-friendly solutions that contribute to a healthier planet for future generations.</div>
+          <div class="who__inner">
+            <button class="btn show-popup" data-aos="fade-up">
+              <svg width="90" height="90">
+                <use href="#btn" />
+              </svg>
+             <span>let’s talk now</span>
+            </button>
+            <div class="who__info" data-aos="fade-up">With over a decade of experience, we combine cutting-edge technology with environmental responsibility to offer products and services that meet the highest standards of energy efficiency and sustainability.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__wrap">
+          <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100">
+           <img src="src/img/gallery/1.png" alt="1">
+          </div>
+           <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100">
+           <img src="src/img/gallery/2.png" alt="2">
+          </div>
+           <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100">
+           <img src="src/img/gallery/3.png" alt="3">
+          </div>
+           <div class="gallery__item" data-aos="zoom-in" data-aos-offset="100">
+           <img src="src/img/gallery/4.png" alt="4">
+          </div>
+        </div>
+        <button class="gallery__btn">See our portfolio</button>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container container--block">
+          <p class="title">Our Services</p>
+        </div>
+        <div class="services__wrap">
+          <div class="services__item" data-aos="fade-in">
+            <div class="services__box">
+              <p class="services__title">Sustainable Energy Consultation</p>
+              <p class="services__count">01</p>
+              <div class="services__text"><p>We provide tailored advice on integrating renewable energy, such as solar or wind power, into your home or business. Our experts assess your current energy consumption and recommend customized solutions to reduce costs and environmental impact. From planning to implementation, we ensure a seamless transition to cleaner energy sources.</p></div>
+             <button class="services__btn">
+               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                <path d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"/>
+                </svg>
+               </button>
+            </div>
+          </div>
+          <div class="services__item" data-aos="fade-in">
+             <div class="services__box">
+               <p class="services__title">Green Technology Implementation</p>
+               <p class="services__count">02</p>
+               <div class="services__text"><p>We provide tailored advice on integrating renewable energy, such as solar or wind power, into your home or business. Our experts assess your current energy consumption and recommend customized solutions to reduce costs and environmental impact. From planning to implementation, we ensure a seamless transition to cleaner energy sources.</p></div>
+              <button class="services__btn">
+               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                <path d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"/>
+                </svg>
+               </button>
+             </div>
+          </div>
+          <div class="services__item" data-aos="fade-in">
+            <div class="services__box">
+              <p class="services__title">Energy Efficiency Audits</p>
+              <p class="services__count">03</p>
+               <div class="services__text"><p>We provide tailored advice on integrating renewable energy, such as solar or wind power, into your home or business. Our experts assess your current energy consumption and recommend customized solutions to reduce costs and environmental impact. From planning to implementation, we ensure a seamless transition to cleaner energy sources.</p></div>
+             <button class="services__btn">
+               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                <path d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"/>
+                </svg>
+               </button>
+            </div>
+          </div>
+          <div class="services__item" data-aos="fade-in">
+            <div class="services__box">
+              <p class="services__title">Maintenance & Support</p>
+              <p class="services__count">04</p>
+              <div class="services__text"><p>We provide tailored advice on integrating renewable energy, such as solar or wind power, into your home or business. Our experts assess your current energy consumption and recommend customized solutions to reduce costs and environmental impact. From planning to implementation, we ensure a seamless transition to cleaner energy sources.</p></div>
+              <button class="services__btn">
+               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                <path d="M1.84619 9.84612L15.0067 9.84612L12.0049 12.8479C11.6586 13.1941 11.464 13.6636 11.4639 14.1533C11.4638 14.643 11.6582 15.1126 12.0043 15.4589C12.3505 15.8053 12.82 15.9999 13.3097 16C13.7994 16.0001 14.269 15.8057 14.6154 15.4595L19.0288 11.0461C19.8352 10.2375 20.2881 9.14203 20.2881 8C20.2881 6.85797 19.8352 5.76255 19.0288 4.95391L14.6154 0.540453C14.269 0.194291 13.7994 -0.000116348 13.3097 0C12.82 0.000115395 12.3505 0.194745 12.0043 0.54107C11.6582 0.887395 11.4638 1.35705 11.4639 1.84671C11.464 2.33637 11.6586 2.80593 12.0049 3.15209L15.0067 6.15388L1.84619 6.15388C1.35657 6.15388 0.887005 6.34838 0.540791 6.6946C0.194576 7.04081 7.24792e-05 7.51038 7.24792e-05 8C7.24792e-05 8.48962 0.194576 8.95919 0.540791 9.3054C0.887005 9.65162 1.35657 9.84612 1.84619 9.84612Z"/>
+                </svg>
+               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews"> 
+        <div class="container container--block">
+          <div class="reviews-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews__inner">
+                  <div class="reviews__image">
+                    <img src="src/img/reviews/emma.png" alt="Emma">
+                  </div>
+                  <div class="reviews__info">
+                    <p class="reviews__title" data-aos="fade-in">Emma Green</p>
+                    <p class="reviews__position" data-aos="fade-in">CEO & Founder</p>
+                  </div>
+                </div>
+                <div class="reviews__text" data-aos="fade-in">
+                  <p>With a deep commitment to sustainability, Emma founded Ecological Technologies to drive innovation in green solutions.</p>
+                </div>
+              </div>
+               <div class="swiper-slide">
+                <div class="reviews__inner">
+                  <div class="reviews__image">
+                    <img src="src/img/reviews/liam.png" alt="Liam">
+                  </div>
+                  <div class="reviews__info">
+                    <p class="reviews__title">Liam Thompson</p>
+                    <p class="reviews__position">Chief Technology Officer</p>
+                  </div>
+                </div>
+                <div class="reviews__text">
+                  <p>Liam oversees all technological developments, ensuring our products are at the forefront of ecological innovation.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__inner">
+                  <div class="reviews__image">
+                    <img src="src/img/reviews/olivia.png" alt="olivia">
+                  </div>
+                  <div class="reviews__info">
+                    <p class="reviews__title">Olivia Martinez</p>
+                    <p class="reviews__position">Head of Product Development</p>
+                  </div>
+                </div>
+                <div class="reviews__text">
+                  <p>Olivia leads the creation of cutting-edge sustainable products, blending design with environmental responsibility.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__inner">
+                  <div class="reviews__image">
+                    <img src="src/img/reviews/james.png" alt="james">
+                  </div>
+                  <div class="reviews__info">
+                    <p class="reviews__title">James Wilson</p>
+                    <p class="reviews__position">Lead Engineer</p>
+                  </div>
+                </div>
+                <div class="reviews__text">
+                  <p>James applies his expertise in engineering to develop efficient and eco-friendly energy systems.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__inner">
+                  <div class="reviews__image">
+                    <img src="src/img/reviews/james.png" alt="James">
+                  </div>
+                  <div class="reviews__info">
+                    <p class="reviews__title">Sophia Liu</p>
+                    <p class="reviews__position">Marketing Director</p>
+                  </div>
+                </div>
+                <div class="reviews__text">
+                  <p>Sophia promotes the company’s vision and products, ensuring we reach a global audience with our green technologies.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__inner">
+                  <div class="reviews__image">
+                    <img src="src/img/reviews/ethan.png" alt="Ethan">
+                  </div>
+                  <div class="reviews__info">
+                    <p class="reviews__title">Ethan Patel</p>
+                    <p class="reviews__position">Customer Support Manager</p>
+                  </div>
+                </div>
+                <div class="reviews__text">
+                  <p>Ethan ensures our clients receive exceptional service, providing support for all product-related inquiries.</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__holder">
+              <div class="swiper__prev">
+                <img src="src/img/btn-prev.svg" alt="prev">
+              </div>
+              <div class="swiper__next">
+                <img src="src/img/btn-next.svg" alt="next">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__holder">
+          <div class="container container--block">
+            <div class="footer__wrap">
+              <div class="footer__item">
+                <div class="footer__block"> 
+                  <p class="footer__title">NEXT GEN</p>
+                  <div class="footer__btn show-popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M3.58204 16.1728L12.8879 6.86692V11.1121C12.8878 11.6017 13.0822 12.0714 13.4284 12.4177C13.7746 12.7641 14.2441 12.9587 14.7338 12.9588C15.2234 12.9589 15.6931 12.7645 16.0394 12.4183C16.3857 12.0722 16.5804 11.6026 16.5805 11.113L16.5805 4.87139C16.5789 3.72937 16.1246 2.63457 15.317 1.82703C14.5095 1.0195 13.4147 0.565134 12.2727 0.563565L6.0311 0.563564C5.54144 0.56368 5.07187 0.758308 4.72571 1.10463C4.37955 1.45096 4.18515 1.92061 4.18526 2.41027C4.18538 2.89994 4.38 3.3695 4.72633 3.71566C5.07265 4.06182 5.54231 4.25623 6.03197 4.25611L10.2771 4.25611L0.971231 13.562C0.625017 13.9082 0.430517 14.3778 0.430517 14.8674C0.430517 15.357 0.625017 15.8266 0.971231 16.1728C1.31745 16.519 1.78701 16.7135 2.27664 16.7135C2.76626 16.7135 3.23582 16.519 3.58204 16.1728Z"/>
+                     </svg>
+                  </div>
+                </div>
+                <div class="footer__text">
+                  <p>Empowering a Greener Future, Together.</p>
+                </div>
+              </div>
+              <div class="footer__item">
+                <ul class="footer__list">
+                  <li><a href="" class="footer__link">Privacy</a></li>
+                  <li><a href="" class="footer__link">Policy Term & Conditions</a></li>
+                  <li><a href="/#about" class="footer__link">About us</a></li>
+                  <li><a href="" class="footer__link">FAQ</a></li>
+                </ul>
+                <div class="footer__socials">
+                  <div class="footer__box">
+                    <img src="src/img/icons/socials/1.svg" alt="1">
+                  </div>
+                  <div class="footer__box">
+                    <img src="src/img/icons/socials/facebook.svg" alt="facebook">
+                  </div>
+                  <div class="footer__box">
+                    <img src="src/img/icons/socials/youtube.svg" alt="youtube">
+                  </div>
+                  <div class="footer__box">
+                    <img src="src/img/icons/socials/instagram.svg" alt="instagram">
+                  </div>
+                </div>
+                <p class="footer__desc">© 2024 NEXT GEN. All Rights Reserved.</p>
+              </div>
+            </div>
+            <div class="footer__elem">Next Gen - 2024</div>
+            <div class="footer__row">
+                <div class="footer__info">
+                  <span>E</span>
+                  <span>c</span>
+                  <span>o</span>
+                </div>
+                <div class="footer__info">
+                  <span>s</span>
+                  <span>y</span>
+                  <span>s</span>
+                  <span>t</span>
+                  <span>e</span>
+                  <span>m</span>
+                  <span>s</span>
+                </div>
+              </div>
+        </div>
+      </div>
+      
+        <p class="footer__site">Developed by  <a href="https://garno.tech/">GARNO.TECH</a></p>
+      </footer>
+
+      <div class="popup">  
+        <div class="popup__user">
+          <button class="popup__close">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M86.9183 28.6336C83.1318 18.9356 76.0999 10.8505 67.0206 5.75595C57.9412 0.661382 47.3763 -1.12745 37.126 0.69425C26.8756 2.51595 17.574 7.83547 10.806 15.7464C4.03805 23.6574 0.222474 33.6703 0.00942346 44.0791C-0.203627 54.4879 3.19903 64.6486 9.63761 72.8299C16.0762 81.0111 25.1523 86.7068 35.3196 88.9464C45.4868 91.1861 56.1161 89.831 65.3963 85.1123C74.6764 80.3935 82.0334 72.6029 86.2135 63.0679L85.1019 62.5806C81.0345 71.8584 73.8761 79.4389 64.8462 84.0304C55.8163 88.6219 45.4737 89.9404 35.5807 87.7612C25.6876 85.582 16.8563 80.0399 10.5914 72.0793C4.32642 64.1187 1.01553 54.232 1.22284 44.104C1.43014 33.9759 5.14281 24.233 11.7282 16.5354C18.3137 8.83781 27.3644 3.66176 37.3383 1.88919C47.3122 0.116626 57.5922 1.85721 66.4267 6.81438C75.2611 11.7716 82.1034 19.6386 85.7877 29.075L86.9183 28.6336Z"/>
+              <path d="M59.5545 57.4752C60.1485 58.0693 60.1485 58.9604 59.5545 59.5545C59.2574 59.8515 58.8119 60 58.5149 60C58.2178 60 57.7723 59.8515 57.4752 59.5545L45 47.0792L32.5248 59.5545C32.2277 59.8515 31.7822 60 31.4851 60C31.1881 60 30.7426 59.8515 30.4455 59.5545C29.8515 58.9604 29.8515 58.0693 30.4455 57.4752L42.9208 45L30.4455 32.5248C29.8515 31.9307 29.8515 31.0396 30.4455 30.4455C31.0396 29.8515 31.9307 29.8515 32.5248 30.4455L45 42.9208L57.4752 30.4455C58.0693 29.8515 58.9604 29.8515 59.5545 30.4455C60.1485 31.0396 60.1485 31.9307 59.5545 32.5248L47.0792 45L59.5545 57.4752Z"/>
+            </svg>
+          </button>
+          <div class="popup__inner">  
+              <p class="title title--white">Let’s talk now</p>
+              <div class="popup__wrap"> 
+                <div class="popup__item"> 
+                  <input type="text" class="input" placeholder="Your name">
+                </div>
+                <div class="popup__item"> 
+                  <input type="text" class="input" placeholder="Phone">
+                </div>
+                <div class="popup__item"> 
+                  <textarea class="input area" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <button class="popup__btn">
+               <span>Send</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                <path d="M3.20069 9.18612L7.36426 5.02256L7.36426 8.20643C7.36417 8.57368 7.50998 8.92592 7.7696 9.18566C8.02922 9.44541 8.38139 9.59138 8.74864 9.59146C9.11589 9.59155 9.46813 9.44575 9.72787 9.18612C9.98761 8.9265 10.1336 8.57433 10.1337 8.20708L10.1337 3.52591C10.1325 2.66939 9.79172 1.84829 9.18607 1.24264C8.58042 0.636992 7.75932 0.296219 6.9028 0.295042L2.22163 0.295041C1.85438 0.295128 1.50221 0.441099 1.24259 0.700843C0.982967 0.960587 0.837163 1.31283 0.837249 1.68007C0.837335 2.04732 0.983306 2.39949 1.24305 2.65911C1.50279 2.91873 1.85503 3.06454 2.22228 3.06445H5.40616L1.24259 7.22802C0.982927 7.48768 0.837053 7.83986 0.837053 8.20707C0.837053 8.57429 0.982928 8.92646 1.24259 9.18612C1.50225 9.44578 1.85443 9.59166 2.22164 9.59166C2.58886 9.59166 2.94103 9.44579 3.20069 9.18612Z"/>
+              </svg>
+              </button>
+          </div>
+        </div>
+      </div>
+
+        <script src="src/js/jquery-3.3.1.min.js"></script>
+        <script src="src/js/aos.js"></script>
+        <script src="src/js/swiper-bundle.min.js"></script>
+        <script src="dist/js/main.js"></script>
+
+    </body>
+</html>
