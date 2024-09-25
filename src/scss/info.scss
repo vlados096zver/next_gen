@@ -101,6 +101,10 @@
 			padding-bottom: 80px;
 			text-align: center;
 		}
+		@include media(sm) {
+			font-size: 20px;
+			padding-bottom: 60px;	
+		}
 	}
 	&__city {
 		font-size: 72px;	
