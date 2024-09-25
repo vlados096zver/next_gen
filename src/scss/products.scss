@@ -33,11 +33,15 @@
 		position: relative;
 		height: auto;
 		background-color: #F4F9FD;
+		border-radius: 40px;
 		padding: 0 10px;
 		padding-top: 430px;
 		padding-bottom: 74px;
 		@include media(mdx) {
 			padding-top: 380px;	
+		}
+		@include media(sm) {
+			border-radius: 20px;
 		}
 		&:nth-child(5) {
 			.products__image {
