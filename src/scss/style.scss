@@ -131,6 +131,10 @@ body {
 .swiper {
   &__prev,
   &__next {
+    img {
+      display: block;
+      max-width: 100%;
+    }
     &:not(.swiper-button-disabled) {
       transition: 0.25s opacity;
       &:hover {
