@@ -19,6 +19,9 @@
 		text-align: center;
 		padding-bottom: 20px;
 		font-weight: 900;
+		@include media(sm) {
+			font-size: 24px;
+		}
 	}
 	&__text {
 		max-width: 378px;
@@ -27,6 +30,9 @@
 		p {
 			font-size: 20px;
 			line-height: 1.5;
+			@include media(sm) {
+				font-size: 18px;
+			}
 		}
 	}
 	.swiper-slide {
@@ -42,6 +48,7 @@
 		}
 		@include media(sm) {
 			border-radius: 20px;
+			padding-bottom: 54px;	
 		}
 		&:nth-child(5) {
 			.products__image {
