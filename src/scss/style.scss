@@ -88,6 +88,9 @@ body {
     max-width: 90px;
     fill: #3BEEB7;
     transition: 0.25s fill;
+    @include media(sm) {
+      max-width: 70px;
+    }
   }
   &:hover {
     color: #35d4a4;

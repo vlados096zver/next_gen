@@ -9,6 +9,9 @@
 		@include media(sm) {
 			padding-top: 58.25%;
 		}
+		@include media(small) {
+			padding-top: 78.25%;
+		}
 	}
 	video {
 		position: absolute;
@@ -48,6 +51,12 @@
 			top: 50%;
 			transform: translate(-50%, -50%);
 			bottom: initial;
+		}
+		img {
+			max-width: 90px;
+			@include media(sm) {
+				max-width: 70px;
+			}
 		}
 		span {
 			@include media(mdx) {

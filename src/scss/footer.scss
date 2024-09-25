@@ -223,7 +223,14 @@
 		background-color: #fff;
 		border-radius: 50%;
 		transition: 0.25s background-color;
+		@include media(sm) {
+		    width: 60px;
+		    height: 60px;
+		}
 		svg {
+			display: block;
+			width: 100%;
+			max-width: 100%;
 			fill: #3AEEBD;
 			transition: 0.25s fill;
 		}
