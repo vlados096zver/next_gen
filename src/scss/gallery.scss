@@ -13,6 +13,19 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		gap: 40px;
+		@include media(mdx) {
+			gap: 30px;
+		}
+		@include media(sm) {
+			gap: 20px;
+		}
+		@include media(xxs) {
+			gap: 15px;
+		}
+		@include media(small) {
+			gap: 10px;
+		}
 	}
 	&__item {
 		img {

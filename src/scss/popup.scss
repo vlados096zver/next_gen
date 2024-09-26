@@ -25,7 +25,7 @@
     .title {
         text-align: center;
     }
-    &__inner {
+    &__form {
         max-width: 820px;
         width: 100%;
         max-height: calc(100vh - 80px);
@@ -125,6 +125,7 @@
             display: block;
             width: 100%;
             max-width: 100%;
+            height: 100%;
         }
         path {
             transition: 0.25s fill;
@@ -146,4 +147,28 @@
             }
         }
     }
+    &__success {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        max-width: 680px;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        color: #5e7b5a;
+        font-size: 68px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        @include media(sm) {
+            font-size: 50px;
+        }
+        @include media(xs) {
+            max-width: 330px;
+            font-size: 29px;
+        }
+    }
+}
+
+.modal__form--hidden {
+    display: none;
 }
